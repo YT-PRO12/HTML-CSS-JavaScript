@@ -3,9 +3,6 @@
 A student registration form built using HTML5 to demonstrate different
 HTML form elements and input types.
 
-## Preview
-
-![Registration Form](images/registration-form.png)
 
 ## Features
 
