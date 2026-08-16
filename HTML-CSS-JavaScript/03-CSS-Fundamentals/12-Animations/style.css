@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+.box {
+    width: 120px;
+    padding: 30px;
+    margin: 50px auto;
+    background-color: lightblue;
+    animation: moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-80px);
+    }
+
+    to {
+        transform: translateX(80px);
+    }
+}
