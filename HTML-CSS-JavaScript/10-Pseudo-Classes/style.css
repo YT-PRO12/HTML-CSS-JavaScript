@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+  ## Hover
+  
+
+.hover-button {
+    padding: 12px 25px;
+
+    background-color: lightblue;
+
+    border: 2px solid black;
+
+    cursor: pointer;
+}
+
+.hover-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+  ## Link
+  
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* =====================
+   Focus
+   ===================== */
+
+input {
+    padding: 10px;
+}
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+
+
+  ## First and Last Child
+   
+
+li:first-child {
+    color: green;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+  ## Nth Child
+   
+
+.items div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+.items div:nth-child(2) {
+    background-color: lightyellow;
+}
