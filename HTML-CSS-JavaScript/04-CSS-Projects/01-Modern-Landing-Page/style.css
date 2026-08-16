@@ -1,0 +1,64 @@
+ :root {
+    --primary: #2563eb;
+    --dark: #172033;
+    --text: #566174;
+    --light: #f5f7fb;
+    --white: #ffffff;
+    --border: #e3e7ef;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; color: var(--dark); line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+.navbar { width: min(1100px, 92%); min-height: 75px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.logo { font-size: 1.6rem; font-weight: bold; }
+nav { display: flex; gap: 28px; }
+nav a { color: var(--text); transition: .3s; }
+nav a:hover { color: var(--primary); }
+.nav-btn, .primary-btn { background: var(--primary); color: white; padding: 11px 20px; border-radius: 8px; display: inline-block; transition: .3s; }
+.nav-btn:hover, .primary-btn:hover { transform: translateY(-2px); }
+.hero { width: min(1100px, 92%); min-height: 560px; margin: auto; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 60px; }
+.tag { color: var(--primary); font-size: .8rem; font-weight: bold; letter-spacing: 2px; margin-bottom: 12px; }
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; margin-bottom: 20px; }
+.description { max-width: 560px; color: var(--text); font-size: 1.1rem; }
+.hero-buttons { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+.secondary-btn { border: 1px solid var(--border); padding: 10px 18px; border-radius: 8px; transition: .3s; }
+.secondary-btn:hover { border-color: var(--primary); color: var(--primary); }
+.hero-card { background: var(--light); border: 1px solid var(--border); border-radius: 20px; padding: 30px; box-shadow: 0 20px 50px rgba(23,32,51,.08); transform: rotate(2deg); transition: .4s; }
+.hero-card:hover { transform: rotate(0deg) translateY(-5px); }
+.mini-card { background: white; padding: 25px; border-radius: 14px; border: 1px solid var(--border); }
+.mini-card span { color: var(--text); }
+.mini-card strong { display: block; font-size: 2.5rem; margin: 8px 0; }
+.progress { height: 9px; background: #e8edf5; border-radius: 20px; overflow: hidden; }
+.progress div { width: 84%; height: 100%; background: var(--primary); }
+.mini-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
+.mini-row div { background: white; padding: 20px; border-radius: 12px; border: 1px solid var(--border); }
+.mini-row strong { display: block; font-size: 1.5rem; }
+.section { background: var(--light); padding: 90px 4%; text-align: center; }
+.section h2, .pricing h2, .about h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 40px; }
+.features { width: min(1100px, 100%); margin: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.feature-card { background: white; padding: 35px 25px; text-align: left; border: 1px solid var(--border); border-radius: 14px; transition: .3s; }
+.feature-card:hover { transform: translateY(-7px); box-shadow: 0 15px 35px rgba(23,32,51,.08); }
+.icon { color: var(--primary); font-weight: bold; margin-bottom: 25px; }
+.feature-card p, .about p { color: var(--text); }
+.pricing { width: min(1100px, 92%); margin: auto; padding: 90px 0; display: grid; grid-template-columns: 1fr 350px; gap: 60px; align-items: center; }
+.price-card { border: 1px solid var(--border); border-radius: 16px; padding: 30px; box-shadow: 0 15px 35px rgba(23,32,51,.06); }
+.price-card h3 { font-size: 2.7rem; margin: 10px 0 20px; }
+.price-card h3 span { font-size: 1rem; color: var(--text); font-weight: normal; }
+.price-card ul { list-style: none; margin-bottom: 25px; }
+.price-card li { padding: 7px 0; }
+.price-card li::before { content: "✓ "; color: var(--primary); font-weight: bold; }
+.about { background: var(--light); padding: 80px 4%; text-align: center; }
+.about p:last-child { max-width: 650px; margin: auto; }
+footer { padding: 25px; text-align: center; color: var(--text); }
+@media (max-width: 800px) {
+    nav { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 60px 0; }
+    .features, .pricing { grid-template-columns: 1fr; }
+}
+@media (max-width: 500px) {
+    .navbar { justify-content: center; }
+    .nav-btn { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero-card { transform: none; }
+}
