@@ -1,0 +1,54 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+p {
+    color: #444;
+}
+
+
+
+
+.highlight {
+    background-color: lightyellow;
+    color: darkorange;
+    padding: 10px;
+}
+
+
+
+#special {
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+
+h2,
+h3 {
+    color: darkgreen;
+}
+
+
+
+
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+}
+
+
+
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 8px;
+}
+
+input[type="email"] {
+    border: 2px solid green;
+    padding: 8px;
+}
