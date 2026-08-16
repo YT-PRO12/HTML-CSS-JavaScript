@@ -1,0 +1,18 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: gray;
+}
+
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    width: 200px;
+}
