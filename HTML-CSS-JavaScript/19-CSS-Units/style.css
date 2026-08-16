@@ -1,0 +1,30 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+div {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.px-box {
+    width: 200px;
+}
+
+.percent-box {
+    width: 50%;
+}
+
+.rem-box {
+    width: 15rem;
+}
+
+.vw-box {
+    width: 40vw;
+}
