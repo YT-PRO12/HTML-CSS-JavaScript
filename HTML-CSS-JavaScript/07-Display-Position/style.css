@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+
+/* =====================
+   DISPLAY
+   ===================== */
+
+.block {
+    display: block;
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: lightyellow;
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+/* =====================
+   POSITION
+   ===================== */
+
+.position-area {
+    position: relative;
+
+    width: 400px;
+    height: 200px;
+
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+.relative-box {
+    position: relative;
+
+    left: 20px;
+    top: 20px;
+
+    width: 100px;
+    padding: 15px;
+
+    background-color: lightblue;
+}
+
+.absolute-box {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 100px;
+    padding: 15px;
+
+    background-color: lightcoral;
+}
+
+
+/* Fixed */
+
+.fixed-box {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    background-color: black;
+    color: white;
+
+    padding: 15px;
+}
