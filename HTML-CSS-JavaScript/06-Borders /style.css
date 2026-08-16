@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    width: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+/* Solid border */
+
+.solid {
+    border: 3px solid black;
+}
+
+
+/* Dashed border */
+
+.dashed {
+    border: 3px dashed blue;
+}
+
+
+/* Dotted border */
+
+.dotted {
+    border: 3px dotted green;
+}
+
+
+/* Rounded border */
+
+.rounded {
+    border: 3px solid purple;
+    border-radius: 15px;
+}
+
+
+/* Circle */
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
