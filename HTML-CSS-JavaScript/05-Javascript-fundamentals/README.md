@@ -70,10 +70,7 @@ assets/
 - Authentication API
 - Campus Marketplace API
 
-### Capstone
-- **CampusHub** — full-stack campus marketplace/service platform
-- **RouteGuard Web** — route-risk visualization frontend
-- **SupportDesk** — AI-support frontend/API integration layer
+
 
 ## How to use
 
