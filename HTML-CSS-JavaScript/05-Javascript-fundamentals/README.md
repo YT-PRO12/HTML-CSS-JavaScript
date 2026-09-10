@@ -1,4 +1,5 @@
-# JavaScript Engineering Lab
+# JavaScript Engineering Learning
+
 
 A structured JavaScript journey from fundamentals to production-style applications.
 
