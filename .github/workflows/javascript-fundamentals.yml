@@ -1,0 +1,32 @@
+name: JavaScript fundamentals tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'HTML-CSS-JavaScript/05-Javascript-fundamentals/08-testing/**'
+      - '.github/workflows/javascript-fundamentals.yml'
+  pull_request:
+    paths:
+      - 'HTML-CSS-JavaScript/05-Javascript-fundamentals/08-testing/**'
+      - '.github/workflows/javascript-fundamentals.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  vitest:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: HTML-CSS-JavaScript/05-Javascript-fundamentals/08-testing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned test tooling
+        run: npm install --no-package-lock
+      - name: Run JavaScript regressions
+        run: npm test
